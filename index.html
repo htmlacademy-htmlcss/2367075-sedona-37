@@ -147,51 +147,59 @@
         </a>
       </footer>
       <div class="modal-container">
-        <div class="modal modal-search">
-          <section class="modal-content">
+        <section class="modal-content">
+          <header class="modal-header">
+            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
             <button class="modal-close-button">
               <span class="visually-hidden">Закрыть</span>
             </button>
-            <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-            <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-              <p class="field-group input-date">
-                <label class="field-group-title" for="search-indate">Дата заезда:</label>
-                <input class="search-form-field field" type="date" id="search-indate" placeholder="Дата заезда"
-                  name="search-indate">
-              </p>
-              <p class="field-group input-date">
-                <label class="field-group-title" for="search-outdate">Дата выезда:</label>
-                <input class="search-form-field field" type="date" id="search-outdate" placeholder="Дата выезда"
-                  name="search-outdate">
-              </p>
-              <div class="number-people">
-                <p class="field-group input-number">
-                  <label class="field-group-title" for="number-adult">Взрослые:</label>
+          </header>
+          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+            <label class="field-group-title label-date" for="search-indate">Дата заезда:
+              <input class="search-form-field field" type="text" id="search-indate" placeholder="Дата заезда"
+                name="search-indate" value="27 апреля 2020">
+            </label>
+            <span class="error">Мы не можем отправить вас в прошлое.</span>
+            <label class="field-group-title label-date" for="search-outdate">Дата выезда:
+              <input class="search-form-field field" type="text" id="search-outdate" placeholder="Дата выезда"
+                name="search-outdate" value="1 сентября 2023">
+            </label>
+            <span class="prompt">На эти даты есть свободные номера. Пока есть.</span>
+            <div class="number-people">
+              <label class="field-group-title label-number-people" for="number-adult">Взрослые:
+                <div class="counter">
                   <button type="button" class="change-minus">
                     <span class="visually-hidden">Уменьшить количество взрослых</span>
-                  </button type="button">
-                  <input class="search-form-field field-number" type="number" name="number-people" id="number-adult"
-                    value="2" disabled="">
+                  </button>
+                  <input class="search-form-field field-number" type="number" min="1" max="9" name="number-people"
+                    id="number-adult" value="2" disabled="">
                   <button type="button" class="change-plus">
                     <span class="visually-hidden">Увеличить количество взрослых</span>
-                  </button type="button">
-                </p>
-                <div class="field-group input-number">
-                  <label class="field-group-title" for="number-child">Дети:</label>
+                  </button>
+                </div>
+              </label>
+              <label class="field-group-title label-number-people" for="number-child">Дети:
+                <div class="info-icon">
+                  <span class="visually-hidden">
+                    Иконка информации
+                  </span>
+                </div>
+                <span class="tooltip"></span>
+                <div class="counter">
                   <button type="button" class="change-minus">
                     <span class="visually-hidden">Уменьшить количество детей</span>
-                  </button type="button">
-                  <input class="search-form-field field-number" type="number" name="number-people" id="number-child"
-                    value="2" disabled="">
+                  </button>
+                  <input class="search-form-field field-number" type="number" min="1" max="9" name="number-people"
+                    id="number-child" value="2" disabled="">
                   <button type="button" class="change-plus">
                     <span class="visually-hidden">Увеличить количество детей</span>
-                  </button type="button">
+                  </button>
                 </div>
-                </p>
-                <button class="button search-form-button" type="submit">Найти</button>
-            </form>
-          </section>
-        </div>
+              </label>
+            </div>
+            <button class="button search-form-button" type="submit">Найти</button>
+          </form>
+        </section>
       </div>
     </div>
   </body>
