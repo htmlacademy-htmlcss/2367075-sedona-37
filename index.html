@@ -114,7 +114,7 @@
             <h2 class="subscribe-title">Подпишитесь на рассылку</h2>
             <p class="subscribe-text">Только полезная информация и никакого спама,<br> честное бойскаутское!</p>
             <form class="subscribe-form" action="https://echo.htmlacademy.ru/" method="post">
-              <label class="visually-hidden" for="your-mail">Введите ваш E-mail></label>
+              <label class="visually-hidden" for="your-email">Введите ваш E-mail></label>
               <input class="subscribe-input" id="your-email" type="text" name="e-mail" placeholder="Ваш e-mail">
               <button class="subscribe-button" type="submit">Подписаться</button>
             </form>
@@ -158,39 +158,46 @@
             <label class="field-group-title label-date" for="search-indate">Дата заезда:
               <input class="search-form-field field" type="text" id="search-indate" placeholder="Дата заезда"
                 name="search-indate" value="27 апреля 2020">
+              <button class="date-icon">
+                <span class="visually-hidden">Иконка выбора даты</span>
+              </button>
+              <span class="error">Мы не можем отправить вас в прошлое.</span>
             </label>
-            <span class="error">Мы не можем отправить вас в прошлое.</span>
             <label class="field-group-title label-date" for="search-outdate">Дата выезда:
               <input class="search-form-field field" type="text" id="search-outdate" placeholder="Дата выезда"
                 name="search-outdate" value="1 сентября 2023">
+              <button class="date-icon">
+                <span class="visually-hidden">Иконка выбора даты</span>
+              </button>
+              <span class="prompt">На эти даты есть свободные номера. Пока есть.</span>
             </label>
-            <span class="prompt">На эти даты есть свободные номера. Пока есть.</span>
             <div class="number-people">
               <label class="field-group-title label-number-people" for="number-adult">Взрослые:
                 <div class="counter">
                   <button type="button" class="change-minus">
                     <span class="visually-hidden">Уменьшить количество взрослых</span>
                   </button>
-                  <input class="search-form-field field-number" type="number" min="1" max="9" name="number-people"
-                    id="number-adult" value="2" disabled="">
+                  <input class="search-form-field field-number" type="text" name="number-people" id="number-adult"
+                    value="2" disabled="">
                   <button type="button" class="change-plus">
                     <span class="visually-hidden">Увеличить количество взрослых</span>
                   </button>
                 </div>
               </label>
               <label class="field-group-title label-number-people" for="number-child">Дети:
-                <div class="info-icon">
-                  <span class="visually-hidden">
-                    Иконка информации
-                  </span>
-                </div>
-                <span class="tooltip"></span>
+                <span class="tooltip">
+                  <button class="tooltip-toggle" type="button">
+                    <span class="visually-hidden">Иконка информации</span>
+                  </button>
+                  <span class="tooltip-text">Укажите количество детей,<br> которые будут с вами, возраст
+                    которых от 6 до 18 лет. Дети<br> до 6 лет размещаются<br> бесплатно.</span>
+                </span>
                 <div class="counter">
                   <button type="button" class="change-minus">
                     <span class="visually-hidden">Уменьшить количество детей</span>
                   </button>
-                  <input class="search-form-field field-number" type="number" min="1" max="9" name="number-people"
-                    id="number-child" value="2" disabled="">
+                  <input class="search-form-field field-number" type="text" name="number-people" id="number-child"
+                    value="2" disabled="">
                   <button type="button" class="change-plus">
                     <span class="visually-hidden">Увеличить количество детей</span>
                   </button>
