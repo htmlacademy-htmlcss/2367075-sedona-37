@@ -4,7 +4,7 @@
   <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="favicons/favicon.svg" type="image/svg+xml">
+    <link rel="icon" href="favicons/favicon.ico">
     <title>HTML Academy: Седона/Каталог</title>
   </head>
 
@@ -95,7 +95,7 @@
                       <span class="control-label">Wi-Fi</span>
                     </label>
                   </li>
-                </ul class="catalog-filter-list">
+                </ul>
               </fieldset>
               <fieldset class="catalog-filter-group radio">
                 <legend class="catalog-filter-title radio-title">Тип жилья:</legend>
@@ -133,9 +133,11 @@
                 <div class="range-slider">
                   <div class="input-price">
                     <label for="input-min-price">
+                      <span class="minimum">от</span>
                       <input class="min-price" type="text" id="input-min-price" value="0">
                     </label>
                     <label for="input-max-price">
+                      <span class="maximum">до</span>
                       <input class="max-price" type="text" id="input-max-price" value="9000">
                     </label>
                   </div>
@@ -149,6 +151,7 @@
                       </button>
                     </div>
                   </div>
+                </div>
               </fieldset>
               <section class="catalog-filter-group filter-button">
                 <button class="button-submit" type="submit">Применить</button>
@@ -196,12 +199,12 @@
               <span class="product-card-price">От 4000 ₽</span>
               <a class="product-card-button" href="#">Подробнее</a>
               <button class="favorites-button">В избранное</button>
-              <ul class="rating">
+              <div class="rating">
                 <span class="star"></span>
                 <span class="star"></span>
                 <span class="star"></span>
                 <span class="star"></span>
-              </ul>
+              </div>
               <span class="rating-item">Рейтинг: 8,5</span>
             </li>
             <li class="product-card">
@@ -214,12 +217,12 @@
               <span class="product-card-price">От 5000 ₽</span>
               <a class="product-card-button" href="#">Подробнее</a>
               <button class="favorites-button">В избранном</button>
-              <ul class="rating">
+              <div class="rating">
                 <span class="star"></span>
                 <span class="star"></span>
                 <span class="star"></span>
                 <span class="star"></span>
-              </ul>
+              </div>
               <span class="rating-item">Рейтинг: 9,2</span>
             </li>
             <li class="product-card">
@@ -232,11 +235,11 @@
               <span class="product-card-price">От 2500 ₽</span>
               <a class="product-card-button" href="#">Подробнее</a>
               <button class="favorites-button">В избранное</button>
-              <ul class="rating">
+              <div class="rating">
                 <span class="star"></span>
                 <span class="star"></span>
                 <span class="star"></span>
-              </ul>
+              </div>
               <span class="rating-item">Рейтинг: 6,9</span>
             </li>
             <li class="product-card">
@@ -249,10 +252,10 @@
               <span class="product-card-price">От 1500 ₽</span>
               <a class="product-card-button" href="#">Подробнее</a>
               <button class="favorites-button">В избранное</button>
-              <ul class="rating">
-                <span class="star"></span>
-                <span class="star"></span>
-              </ul>
+              <div class="rating">
+                <div class="star"></div>
+                <div class="star"></div>
+              </div>
               <span class="rating-item">Рейтинг: 5,0</span>
             </li>
           </ul>
