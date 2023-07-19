@@ -47,45 +47,109 @@
       <!-- main -->
       <main class="main-catalog">
         <section class="search-hotel">
-          <h1 class="search-title">Гостиницы Седоны</h1>
-          <ol class="breadcrumbs">
-            <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link breadcrumbs-home" href="index.html">
-                <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
-                  <path
-                    d="M6.5 0.5L0.5 6.30006V12.5001H12.5V6.30006L6.5 0.5ZM11.5 11.5001H1.5V6.70005L6.5 1.9L11.5 6.70005V11.5001Z"
-                    fill="white" />
-                  <path d="M4.5 10.5001H5.5V8.00005H7.5V10.5001H8.5V7.00005H4.5V10.5001Z" fill="white" />
-                </svg>
-              </a>
-            </li>
-            <li class="breadcrumbs-item">
-              <a class="breadcrumbs-link">Гостиницы</a>
-            </li>
-          </ol>
-          <form class="filter" action="#" method="post">
-            <fieldset name="filter-item checkbox">
-              <legend>Инфраструктура:</legend>
-              <label><input type="checkbox" name="swimingpool" checked value="Бассейн">Бассейн</label>
-              <label><input type="checkbox" name="parcking" checked value="Парковка">Парковка</label>
-              <label><input type="checkbox" name="wi-fi" value="Wi-Fi">Wi-Fi</label>
+          <div class="main-title">
+            <h1 class="search-title">Гостиницы Седоны</h1>
+            <ol class="breadcrumbs">
+              <li class="breadcrumbs-item">
+                <a class="breadcrumbs-link breadcrumbs-home" href="index.html">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="13" height="13" viewBox="0 0 13 13" fill="none">
+                    <path
+                      d="M6.5 0.5L0.5 6.30006V12.5001H12.5V6.30006L6.5 0.5ZM11.5 11.5001H1.5V6.70005L6.5 1.9L11.5 6.70005V11.5001Z"
+                      fill="white" />
+                    <path d="M4.5 10.5001H5.5V8.00005H7.5V10.5001H8.5V7.00005H4.5V10.5001Z" fill="white" />
+                  </svg>
+                </a>
+              </li>
+              <li class="breadcrumbs-item">
+                <a class="breadcrumbs-link">Гостиницы</a>
+              </li>
+            </ol>
+          </div>
+          <form class="catalog-filter" action="#" method="post">
+            <fieldset class="catalog-filter-group checkbox">
+              <legend class="catalog-filter-title checkbox-title">Инфраструктура:</legend>
+              <ul class="catalog-filter-list">
+                <li class="catalog-filter-item">
+                  <label class="control" for="button-pool">
+                    <input class="visually-hidden control-input" id="button-pool" type="checkbox" name="swimingpool"
+                      checked value="Бассейн">
+                    <span class="control-mark-checkbox control-mark"></span>
+                    <span class="control-label"> Бассейн</span>
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control" for="button-parcking">
+                    <input class="visually-hidden control-input" id="button-parcking" type="checkbox" name="parcking"
+                      checked value="Парковка">
+                    <span class="control-mark-checkbox control-mark"></span>
+                    <span class="control-label">Парковка</span>
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control" for="button-wifi">
+                    <input class="visually-hidden control-input" id="button-wifi" type="checkbox" name="wi-fi"
+                      value="Wi-Fi">
+                    <span class="control-mark-checkbox control-mark"></span>
+                    <span class="control-label">Wi-Fi</span>
+                  </label>
+                </li>
+              </ul class="catalog-filter-list">
             </fieldset>
-            <fieldset name="filter-item radio">
-              <legend>Тип жилья:</legend>
-              <label><input type="radio" name="type-housing" checked value="Гостиница">Гостиница</label>
-              <label><input type="radio" name="type-housing" value="Мотель">Мотель</label>
-              <label><input type="radio" name="type-housing" value="Апартаменты">Апартаменты</label>
+            <fieldset class="catalog-filter-group radio">
+              <legend class="catalog-filter-title radio-title">Тип жилья:</legend>
+              <ul class="catalog-filter-list">
+                <li class="catalog-filter-item">
+                  <label class="control" for="button-hotel">
+                    <input class="visually-hidden control-input" id="button-hotel" type="radio" name="type-housing"
+                      checked value="Гостиница">
+                    <span class="control-mark-radio control-mark"></span>
+                    <span class="control-label">Гостиница</span>
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control" for="button-motel">
+                    <input class="visually-hidden control-input" id="button-motel" type="radio" name="type-housing"
+                      value="Мотель">
+                    <span class="control-mark-radio control-mark"></span>
+                    <span class="control-label">Мотель</span>
+                  </label>
+                </li>
+                <li class="catalog-filter-item">
+                  <label class="control" for="button-appart">
+                    <input class="visually-hidden control-input" id="button-appart" type="radio" name="type-housing"
+                      value="Апартаменты">
+                    <span class="control-mark-radio control-mark"></span>
+                    <span class="control-label">Апартаменты</span>
+                  </label>
+                </li>
+              </ul>
             </fieldset>
-            <fieldset name="filter-item filter-input">
-              <legend>Стоимость,<span>₽</span>:</legend>
-              <label>от<input type="text" value="0"></label>
-              <label>до<input type="text" value="9000"></label>
-              <input type="range" id="volume" name="volume">
+            <fieldset class="catalog-filter-group filter-price">
+              <legend class="catalog-filter-title price-title">Стоимость, <span>₽</span>:</legend>
+              <div class="range-slider">
+                <div class="input-price">
+                  <label for="input-min-price">
+                    <input class="min-price" type="text" id="input-min-price" value="0">
+                  </label>
+                  <label for="input-max-price">
+                    <input class="max-price" type="text" id="input-max-price" value="9000">
+                  </label>
+                </div>
+                <div class="range-scale">
+                  <div class="range-bar">
+                    <button class="range-toggle toggle-min">
+                      <span class="visually-hidden">Изменить минимальную цену.</span>
+                    </button>
+                    <button class="range-toggle toggle-max">
+                      <span class="visually-hidden">Изменить максимальную цену.</span>
+                    </button>
+                  </div>
+                </div>
             </fieldset>
-            <div class="filter-item">
-              <button type="submit">Применить</button>
-              <button type="reset">Сбросить</button>
-            </div>
+            <section class="catalog-filter-group filter-button">
+              <button class="button-submit" type="submit">Применить</button>
+              <button class="button-reset" type="reset">Сбросить</button>
+            </section>
           </form>
         </section>
         <section class="catalog-hotel">
@@ -98,19 +162,18 @@
             </select>
             <ul class="view-mode">
               <li class="display-mode-item view-table">
-                <a class="button" href="#">
+                <a class="view-button" href="#">
                   <span class="visually-hidden">Показать таблицу</span>
                 </a>
               </li>
               <li class="display-mode-item view-slideshow">
-                <a class="button" href="#">
+                <a class="view-button" href="#">
                   <span class="visually-hidden">Показать слайдшоу</span>
                 </a>
               </li>
               <li class="display-mode-item view-list">
-                <a class="button" href="#">
+                <a class="view-button" href="#">
                   <span class="visually-hidden">Показать список</span>
-
                 </a>
               </li>
             </ul>
@@ -143,7 +206,7 @@
               <p class="product-card-name">Гостиница</p>
               <span class="product-card-price">От 5000 ₽</span>
               <a class="product-card-button" href="#">Подробнее</a>
-              <button class="favorites-button">В избранное</button>
+              <button class="favorites-button">В избранном</button>
               <ul class="rating">
                 <span class="star"></span>
                 <span class="star"></span>
@@ -201,7 +264,7 @@
             </li>
             <li class="pagination-item  pagination-next">
               <a class="pagination-link" href="#">
-                <span class="visually-hidden">...</span>
+                <span class="pagination-link">...</span>
               </a>
             </li>
             <li class="pagination-item">
