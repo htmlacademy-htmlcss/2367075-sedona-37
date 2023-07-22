@@ -1,15 +1,13 @@
 <!DOCTYPE html>
 <html lang="ru">
-
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles/styles.css">
-    <link rel="icon" href="favicons/favicon.ico">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" type="image/png" href="images/favicon.png">
     <title>HTML Academy: Седона</title>
   </head>
-
   <body>
-    <!-- Header -->
     <div class="page-wrapper">
       <header class="page-header">
         <nav class="navigation">
@@ -45,7 +43,6 @@
           </ul>
         </nav>
       </header>
-      <!-- Main -->
       <main class="main-index main-container">
         <section class="hero">
           <h1 class="visually-hidden">Добро пожаловать в Седону</h1>
@@ -124,7 +121,6 @@
           </section>
         </section>
       </main>
-      <!-- Footer -->
       <footer class="page-footer">
         <ul class="social-list">
           <li class="visually-hidden">Седона в социальных сетях</li>
@@ -153,7 +149,7 @@
         <section class="modal-content">
           <header class="modal-header">
             <h2 class="modal-title">Поиск гостиницы в Седоне</h2>
-            <button class="modal-close-button">
+            <button class="modal-close-button" type="button">
               <span class="visually-hidden">Закрыть</span>
             </button>
           </header>
@@ -161,17 +157,11 @@
             <label class="field-group-title label-date" for="search-indate">Дата заезда:
               <input class="search-form-field field" type="text" id="search-indate" placeholder="Дата заезда"
                 name="search-indate" value="27 апреля 2020">
-              <button class="date-icon">
-                <span class="visually-hidden">Иконка выбора даты</span>
-              </button>
               <span class="error">Мы не можем отправить вас в прошлое.</span>
             </label>
             <label class="field-group-title label-date" for="search-outdate">Дата выезда:
               <input class="search-form-field field" type="text" id="search-outdate" placeholder="Дата выезда"
                 name="search-outdate" value="1 сентября 2023">
-              <button class="date-icon">
-                <span class="visually-hidden">Иконка выбора даты</span>
-              </button>
               <span class="prompt">На эти даты есть свободные номера. Пока есть.</span>
             </label>
             <div class="number-people">
@@ -213,5 +203,4 @@
       </div>
     </div>
   </body>
-
 </html>

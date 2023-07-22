@@ -1,5 +1,5 @@
 @font-face {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-style: normal;
   font-weight: 400;
   src: url("../fonts/ptsans-400.woff2") format("woff2");
@@ -27,16 +27,10 @@
   overflow: hidden;
 }
 
-
 body {
   min-height: 100%;
   max-width: 1200px;
   margin: 0 auto;
-  font-family: "PT Sans", sans-serif;
-  font-style: normal;
-  font-weight: 700;
-  font-size: 20px;
-  line-height: 36px;
   background: #F2F2F2;
 
 }
@@ -48,7 +42,6 @@ body {
 
 }
 
-/* header */
 .page-header {
   padding: 0 70px;
 }
@@ -99,7 +92,7 @@ body {
   align-items: center;
   gap: 8px;
   align-self: stretch;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -197,7 +190,7 @@ body {
   background: #7DB54F;
   color: #FFFFFF;
   text-align: center;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 10px;
   font-style: normal;
   font-weight: 400;
@@ -210,7 +203,7 @@ body {
 
 .header-button {
 
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 20px;
   font-style: normal;
@@ -247,7 +240,6 @@ body {
   outline: none;
 }
 
-/* footer */
 .page-footer {
   display: flex;
   box-sizing: border-box;
@@ -345,7 +337,7 @@ body {
   width: 720px;
   height: 50px;
   padding: 5px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-weight: 400;
   font-size: 40px;
   line-height: 40px;
@@ -415,7 +407,7 @@ body {
 }
 
 .modal-title {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -469,7 +461,7 @@ body {
 
 .field-group-title {
   display: inline-flex;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -487,29 +479,20 @@ body {
 .field {
   display: block;
   box-sizing: border-box;
-  font-family: "PT Sans";
-  font-size: 18px;
+  font-family: "PT Sans", sans-serif;
+  font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: 24px;
   padding: 12px 20px;
   width: 440px;
+  background: url(../images/icons/date-icon.svg) center 50% / 16px 16px no-repeat;
   background-color: rgba(242, 242, 242, 1);
   border: none;
 }
 
 .field:focus {
   outline: 3px solid #83B3D3;
-}
-
-.date-icon {
-  position: absolute;
-  left: 537px;
-  background: url(../images/icons/date-icon.svg) center / 16px 16px no-repeat;
-  width: 20px;
-  height: 20px;
-  opacity: 0.4;
-  border: 0;
 }
 
 .date-icon:hover,
@@ -523,7 +506,7 @@ body {
 }
 
 .error {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -537,7 +520,7 @@ body {
 }
 
 .prompt {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -648,7 +631,7 @@ body {
   text-align: center;
   width: 31px;
   height: 48px;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -687,7 +670,6 @@ body {
   outline: none;
 }
 
-
 .change-plus {
   box-sizing: content-box;
   background: url("../images/icons/button-plus.svg") center / 20px 20px no-repeat;
@@ -715,7 +697,7 @@ body {
 }
 
 .search-form-button {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -749,13 +731,13 @@ body {
   opacity: 0.3;
 }
 
-/* main */
 .hero {
   display: flex;
   justify-content: center;
   align-items: center;
-  background: url("../images/backgrounds/hero-background.svg") bottom center / 100% 57px no-repeat,
-    url("../images/backgrounds/index-background.jpg") center center / auto auto no-repeat;
+  background: url("../images/backgrounds/hero-background.svg") bottom center / 1200px 57px no-repeat,
+    url("../images/backgrounds/index-background.jpg"), center center / cover no-repeat;
+    background-color: lightgray;
   height: 485px;
 }
 
@@ -792,7 +774,7 @@ body {
 }
 
 .reasons-title-hero {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -803,7 +785,7 @@ body {
 }
 
 .reasons-text {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
@@ -849,7 +831,7 @@ body {
 }
 
 .reasons-text-title {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -860,7 +842,7 @@ body {
 }
 
 .reasons-description {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -883,6 +865,7 @@ body {
 .street img,
 .bridge img {
   min-width: 400px;
+  height: auto;
   align-self: stretch;
   object-fit: cover;
 }
@@ -926,7 +909,7 @@ body {
 }
 
 .advantages-title-hero {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -938,7 +921,7 @@ body {
 }
 
 .advantages-text {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
@@ -1006,7 +989,7 @@ body {
 }
 
 .advantages-title {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -1016,7 +999,7 @@ body {
 }
 
 .advantages-discription {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -1039,7 +1022,7 @@ body {
 }
 
 .hotel-choice-title {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -1051,7 +1034,7 @@ body {
 }
 
 .hotel-choice-text {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
@@ -1062,7 +1045,7 @@ body {
 }
 
 .button-search {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -1103,14 +1086,17 @@ body {
   justify-content: center;
   align-items: center;
   align-content: center;
-  background: url("../images/backgrounds/Subscribe.jpg") center / auto auto no-repeat;
+  background-image: url("../images/backgrounds/Subscribe.jpg");
+  background-repeat: no-repeat;
+  background-color: lightgray;
+  background-size: cover;
   width: 100%;
   text-align: center;
   color: #FFFFFF;
 }
 
 .subscribe-title {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -1121,7 +1107,7 @@ body {
 }
 
 .subscribe-text {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 22px;
   font-style: normal;
   font-weight: 400;
@@ -1135,7 +1121,7 @@ body {
 }
 
 .subscribe-input {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -1157,7 +1143,7 @@ body {
 }
 
 .subscribe-button {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -1193,12 +1179,12 @@ body {
   outline: none;
 }
 
-/* main_catalog.html */
 .search-hotel {
   padding: 35px 70px 70px 70px;
   background-image: url("../images/backgrounds/catalog_backdround.jpg");
   background-size: cover;
   background-repeat: no-repeat;
+  background-color: rgba(242, 242, 242, 1);
   color: #FFFFFF;
   display: flex;
   flex-direction: column;
@@ -1216,7 +1202,7 @@ body {
 }
 
 .search-title {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 60px;
   font-style: normal;
   font-weight: 700;
@@ -1242,7 +1228,7 @@ body {
 }
 
 .breadcrumbs-link {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
@@ -1268,7 +1254,7 @@ body {
 }
 
 .catalog-filter {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 20px;
   font-style: normal;
   font-weight: 700;
@@ -1296,7 +1282,7 @@ body {
 }
 
 .catalog-filter-group {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -1311,8 +1297,8 @@ body {
 }
 
 .catalog-filter-title {
-  font-family: PT Sans;
-  font-size: 20px;
+  font-family: "PT Sans", sans-serif;
+  sans-serif font-size: 20px;
   font-style: normal;
   font-weight: 700;
   line-height: 24px;
@@ -1382,7 +1368,7 @@ body {
 }
 
 .control-label {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -1397,6 +1383,10 @@ body {
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.price-title {
+  margin-bottom: 8px;
 }
 
 .range-slider {
@@ -1420,7 +1410,7 @@ body {
   border-radius: 4px 0 0 4px;
   background: #F2F2F2;
   border: none;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -1429,14 +1419,15 @@ body {
 
 .minimum {
   position: relative;
-  bottom: 35px;
+  top: 37px;
   left: 106px;
-  font-family: PT Sans;
-  font-size: 18px;
+  font-family: "PT Sans", sans-serif;
+  sans-serif font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
   color: rgba(0, 0, 0, 0.3);
+  text-transform: lowercase;
 }
 
 .min-price:focus {
@@ -1452,7 +1443,7 @@ body {
   border-radius: 0 4px 4px 0;
   background: #F2F2F2;
   border: none;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 700;
@@ -1461,14 +1452,15 @@ body {
 
 .maximum {
   position: relative;
-  bottom: 35px;
+  top: 37px;
   left: 106px;
-  font-family: PT Sans;
-  font-size: 18px;
+  font-family: "PT Sans", sans-serif;
+  sans-serif font-size: 18px;
   font-style: normal;
   font-weight: 400;
   line-height: 24px;
   color: rgba(0, 0, 0, 0.3);
+  text-transform: lowercase;
 }
 
 .max-price:focus {
@@ -1538,7 +1530,7 @@ body {
 }
 
 .button-submit {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -1572,7 +1564,7 @@ body {
 }
 
 .button-reset {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -1614,7 +1606,7 @@ body {
 }
 
 .catalog-main-text {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 30px;
   font-style: normal;
   font-weight: 700;
@@ -1630,7 +1622,7 @@ body {
 }
 
 .select-control {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -1774,7 +1766,7 @@ body {
 }
 
 .product-card-title {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 24px;
   font-style: normal;
   font-weight: 700;
@@ -1783,7 +1775,7 @@ body {
 }
 
 .product-card-name {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -1793,7 +1785,7 @@ body {
 }
 
 .product-card-price {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 18px;
   font-style: normal;
   font-weight: 400;
@@ -1803,7 +1795,7 @@ body {
 }
 
 .product-card-button {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -1839,7 +1831,7 @@ body {
 }
 
 .favorites-button {
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 700;
@@ -1912,7 +1904,7 @@ body {
   border-radius: 4px;
   padding: 9px 22px 8px 23px;
   background-color: #F2F2F2;
-  font-family: "PT Sans";
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
