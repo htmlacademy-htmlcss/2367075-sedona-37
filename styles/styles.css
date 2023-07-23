@@ -32,14 +32,12 @@ body {
   max-width: 1200px;
   margin: 0 auto;
   background: #F2F2F2;
-
 }
 
 .page-wrapper {
   background-color: #FFFFFF;
   color: #000000;
   box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.20);
-
 }
 
 .page-header {
@@ -57,7 +55,7 @@ body {
 
 .logo-header {
   margin: 0 -2px -6px 0;
-  width: 140px;
+  max-width: 140px;
   height: 70px;
   text-decoration: none;
   color: inherit;
@@ -373,7 +371,7 @@ body {
 }
 
 .logo-link {
-  width: 115px;
+  max-width: 115px;
   height: 33px;
   flex-shrink: 0;
   margin-left: auto;
@@ -421,9 +419,9 @@ body {
   width: 52px;
   height: 52px;
   padding: 0;
-  background-color: rgba(242, 242, 242, 1);
   border: none;
   border-radius: 50%;
+  background-color: rgba(242, 242, 242, 1);
   background-image: url("../images/cross.svg");
   background-repeat: no-repeat;
   background-position: center;
@@ -478,22 +476,23 @@ body {
   display: block;
   box-sizing: border-box;
   font-family: "PT Sans", sans-serif;
-  font-size: 20px;
+  font-size: 18px;
   font-style: normal;
   font-weight: 700;
   line-height: 24px;
   padding: 12px 20px;
   width: 440px;
-  /* background: url(../images/icons/date-icon.svg) 400px center / 16px 16px no-repeat; */
   background-color: rgba(242, 242, 242, 1);
   border: none;
 }
 
-.field::before {
+.label-date::after {
   content: "";
+  position: absolute;
+  left: 535px;
   display: block;
   padding: 2px 2px 3px 2px;
-  background: url(../images/icons/date_icon.svg) 400px center / 16px 16px no-repeat;
+  background: url(../images/icons/date_icon.svg) center / 16px 16px no-repeat;
   opacity: 0.3;
   width: 20px;
   height: 20px;
@@ -602,7 +601,7 @@ body {
 .tooltip-toggle::before {
   position: absolute;
   right: 4px;
-  bottom: -14px;
+  bottom: -15px;
   content: "";
   background: url(../images/icons/triangle_tooltip.svg) center / 19px 9px no-repeat;
   width: 19px;
@@ -634,11 +633,10 @@ body {
 }
 
 .field-number {
-
   display: block;
   box-sizing: border-box;
   text-align: center;
-  width: 31px;
+  width: 30px;
   height: 48px;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -647,10 +645,11 @@ body {
   line-height: 20px;
   color: rgba(0, 0, 0, 1);
   border: none;
+  background-color: rgba(242, 242, 242, 1)
 }
 
 .field-number:focus {
-  outline: 3px solid #83B3D3;
+  border: 3px solid #83B3D3;
 }
 
 .change-minus {
@@ -873,7 +872,7 @@ body {
 
 .street img,
 .bridge img {
-  min-width: 400px;
+  max-width: 800px;
   height: auto;
   align-self: stretch;
   object-fit: cover;
@@ -1095,9 +1094,9 @@ body {
   justify-content: center;
   align-items: center;
   align-content: center;
+  background-color: lightgray;
   background-image: url("../images/backgrounds/subscribe.jpg");
   background-repeat: no-repeat;
-  background-color: lightgray;
   background-size: cover;
   width: 100%;
   text-align: center;
@@ -1190,10 +1189,10 @@ body {
 
 .search-hotel {
   padding: 35px 70px 70px 70px;
+  background-color: rgba(242, 242, 242, 1);
   background-image: url("../images/backgrounds/catalog_backdround.jpg");
   background-size: cover;
   background-repeat: no-repeat;
-  background-color: rgba(242, 242, 242, 1);
   color: #FFFFFF;
   display: flex;
   flex-direction: column;
@@ -1279,7 +1278,7 @@ body {
 .filter {
   display: flex;
   justify-content: space-around;
-  gap: 70px;
+  gap: 67px;
 }
 
 .filter-control {
@@ -1739,7 +1738,7 @@ body {
 .product-card {
   display: grid;
   grid-template-columns: 140px 140px;
-  gap: 16px;
+  gap: 16px 20px;
   padding: 20px;
   align-content: center;
   align-items: center;
@@ -1810,13 +1809,15 @@ body {
   line-height: 20px;
   text-transform: uppercase;
   display: flex;
-  padding: 8px 50px;
+  padding: 8px 23px;
   justify-content: center;
   align-items: center;
   border-radius: 4px;
   background-color: #756157;
   color: #FFFFFF;
   text-decoration: none;
+  text-align: center;
+  word-break: break-all;
 }
 
 .product-card-button:hover,
@@ -1910,7 +1911,7 @@ body {
 .rating-item {
   box-sizing: border-box;
   border-radius: 4px;
-  padding: 9px 22px 8px 23px;
+  padding: 7px 17px 8px 19px;
   background-color: #F2F2F2;
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
