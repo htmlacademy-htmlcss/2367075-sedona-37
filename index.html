@@ -160,8 +160,10 @@
               <span class="error">Мы не можем отправить вас в прошлое.</span>
             </label>
             <label class="field-group-title label-date" for="search-outdate">Дата выезда:
-              <input class="search-form-field field" type="text" id="search-outdate" placeholder="Дата выезда"
-                name="search-outdate" value="1 сентября 2023">
+              <form metod="post">
+                <input class="search-form-field field" type="text" id="search-outdate" placeholder="Дата выезда"
+                  name="search-outdate" value="1 сентября 2023">
+              </form>
               <span class="prompt">На эти даты есть свободные номера. Пока есть.</span>
             </label>
             <div class="number-people">
@@ -171,8 +173,10 @@
                   <button type="button" class="change-minus">
                     <span class="visually-hidden">Уменьшить количество взрослых</span>
                   </button>
-                  <input class="search-form-field field-number" type="text" name="number-people" id="number-adult"
-                    value="2" disabled="">
+                  <form method="post">
+                    <input class="search-form-field field-number" type="text" name="number-people" id="number-adult"
+                      value="2" disabled="">
+                  </form>
                   <button type="button" class="change-plus">
                     <span class="visually-hidden">Увеличить количество взрослых</span>
                   </button>
