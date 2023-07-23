@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles/styles.css">
@@ -7,6 +8,7 @@
     <link rel="icon" type="image/png" href="images/favicon.png">
     <title>HTML Academy: Седона</title>
   </head>
+
   <body>
     <div class="page-wrapper">
       <header class="page-header">
@@ -165,7 +167,8 @@
               <span class="prompt">На эти даты есть свободные номера. Пока есть.</span>
             </label>
             <div class="number-people">
-              <label class="field-group-title label-number-people" for="number-adult">Взрослые:
+              <div class="input-people">
+                <label class="field-group-title label-number-people" for="number-adult">Взрослые:</label>
                 <div class="counter">
                   <button type="button" class="change-minus">
                     <span class="visually-hidden">Уменьшить количество взрослых</span>
@@ -176,8 +179,9 @@
                     <span class="visually-hidden">Увеличить количество взрослых</span>
                   </button>
                 </div>
-              </label>
-              <label class="field-group-title label-number-people" for="number-child">Дети:
+              </div>
+              <div class="input-adult">
+                <label class="field-group-title label-number-people" for="number-child">Дети:</label>
                 <span class="tooltip">
                   <button class="tooltip-toggle" type="button">
                     <span class="visually-hidden">Иконка информации</span>
@@ -195,7 +199,7 @@
                     <span class="visually-hidden">Увеличить количество детей</span>
                   </button>
                 </div>
-              </label>
+              </div>
             </div>
             <button class="button search-form-button" type="submit">Найти</button>
           </form>
@@ -203,4 +207,5 @@
       </div>
     </div>
   </body>
+
 </html>
