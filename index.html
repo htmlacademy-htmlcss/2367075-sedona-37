@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
+
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="styles/styles.css">
@@ -7,6 +8,7 @@
     <link rel="icon" type="image/png" href="images/favicon.png">
     <title>HTML Academy: Седона</title>
   </head>
+
   <body>
     <div class="page-wrapper">
       <header class="page-header">
@@ -153,17 +155,15 @@
               <span class="visually-hidden">Закрыть</span>
             </button>
           </header>
-          <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
+          <form class="search-form" action="https://echo.htmlacademy.ru/">
             <label class="field-group-title label-date" for="search-indate">Дата заезда:
               <input class="search-form-field field" type="text" id="search-indate" placeholder="Дата заезда"
                 name="search-indate" value="27 апреля 2020">
               <span class="error">Мы не можем отправить вас в прошлое.</span>
             </label>
             <label class="field-group-title label-date" for="search-outdate">Дата выезда:
-              <form metod="post">
-                <input class="search-form-field field" type="text" id="search-outdate" placeholder="Дата выезда"
-                  name="search-outdate" value="1 сентября 2023">
-              </form>
+              <input class="search-form-field field" type="text" id="search-outdate" placeholder="Дата выезда"
+                name="search-outdate" value="1 сентября 2023">
               <span class="prompt">На эти даты есть свободные номера. Пока есть.</span>
             </label>
             <div class="number-people">
@@ -173,10 +173,8 @@
                   <button type="button" class="change-minus">
                     <span class="visually-hidden">Уменьшить количество взрослых</span>
                   </button>
-                  <form method="post">
-                    <input class="search-form-field field-number" type="text" name="number-people" id="number-adult"
-                      value="2" disabled="">
-                  </form>
+                  <input class="search-form-field field-number" type="text" name="number-people" id="number-adult"
+                    value="2">
                   <button type="button" class="change-plus">
                     <span class="visually-hidden">Увеличить количество взрослых</span>
                   </button>
@@ -196,7 +194,7 @@
                     <span class="visually-hidden">Уменьшить количество детей</span>
                   </button>
                   <input class="search-form-field field-number" type="text" name="number-people" id="number-child"
-                    value="2" disabled="">
+                    value="2">
                   <button type="button" class="change-plus">
                     <span class="visually-hidden">Увеличить количество детей</span>
                   </button>
@@ -209,4 +207,5 @@
       </div>
     </div>
   </body>
+
 </html>

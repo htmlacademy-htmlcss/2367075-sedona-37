@@ -484,16 +484,17 @@ body {
   line-height: 24px;
   padding: 12px 20px;
   width: 440px;
-  /* background: url(../images/icons/date-icon.svg) 400px center / 16px 16px no-repeat; */
   background-color: rgba(242, 242, 242, 1);
   border: none;
 }
 
-.field::before {
+.label-date::after {
   content: "";
+  position: absolute;
+  left: 539px;
   display: block;
   padding: 2px 2px 3px 2px;
-  background: url(../images/icons/date_icon.svg) 400px center / 16px 16px no-repeat;
+  background: url(../images/icons/date_icon.svg) center / 16px 16px no-repeat;
   opacity: 0.3;
   width: 20px;
   height: 20px;
@@ -634,11 +635,10 @@ body {
 }
 
 .field-number {
-
   display: block;
   box-sizing: border-box;
   text-align: center;
-  width: 31px;
+  width: 30px;
   height: 48px;
   font-family: "PT Sans", sans-serif;
   font-size: 18px;
@@ -647,6 +647,7 @@ body {
   line-height: 20px;
   color: rgba(0, 0, 0, 1);
   border: none;
+  background-color: rgba(242, 242, 242, 1)
 }
 
 .field-number:focus {
