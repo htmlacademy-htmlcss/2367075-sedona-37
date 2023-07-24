@@ -371,7 +371,7 @@ body {
 }
 
 .logo-link {
-  max-width: 115px;
+  width: 115px;
   height: 33px;
   flex-shrink: 0;
   margin-left: auto;
